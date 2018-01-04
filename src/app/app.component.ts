@@ -20,4 +20,7 @@ export class AppComponent {
       number: 19,
     }
   };
+  promiseValue = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Llego el dato'), 3500);
+  });
 }
