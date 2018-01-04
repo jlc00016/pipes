@@ -20,7 +20,8 @@ export class AppComponent {
       number: 19,
     }
   };
-  promiseValue = new Promise((resolve, reject) => {
+  promiseValue: Promise= new Promise((resolve, reject) => {
     setTimeout(() => resolve('Llego el dato'), 3500);
   });
+  date: Date = new Date();
 }
