@@ -1,7 +1,9 @@
 <div class="container">
 
   <br>
+
   <h1>Pipes</h1>
+
   <hr>
 
   <table class="table">
@@ -25,6 +27,11 @@
       </tr>
       <tr>
         <td>{{ name }}</td>
+        <td>slice:3</td>
+        <td>{{ name | slice:3 }}</td>
+      </tr>
+      <tr>
+        <td>{{ name }}</td>
         <td>slice:0:3</td>
         <td>{{ name | slice:0:3 }}</td>
       </tr>
@@ -42,6 +49,16 @@
         <td>{{ PI }}</td>
         <td>number:'1.0-2'</td>
         <td>{{ PI | number:'1.0-2' }}</td>
+      </tr>
+      <tr>
+        <td>{{ number }}</td>
+        <td>percent</td>
+        <td>{{ number | percent }}</td>
+      </tr>
+      <tr>
+        <td>{{ number }}</td>
+        <td>percent:'2.2-2'</td>
+        <td>{{ number | percent:'2.2-2' }}</td>
       </tr>
     </tbody>
   </table>

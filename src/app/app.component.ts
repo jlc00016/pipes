@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Jesús';
-  array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  PI = Math.PI;
+  name: string = 'Jesús';
+  array: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  PI: number = Math.PI;
+  number: number = 0.234;
+
 }
